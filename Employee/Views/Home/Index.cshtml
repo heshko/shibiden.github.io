@@ -1,0 +1,37 @@
+﻿@model Employeee
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    
+    <h1 class="display-4">Welcome To Shihabi Dental I HelsingBorg</h1>
+    <div class="row">
+      
+            <div class="col-6 left-box">
+                <img class="mainImage" src="https://d35fy42lrypnk3.cloudfront.net/organizations/organization-52132/shihabi-dental-helsingborg-undersokning-varden.se.jpg" />
+            </div>
+            <div class="col-6 right-box">
+                <div class="col-12 " >
+                    <a class="btn btn-primary box-1" asp-area="Admin" asp-controller="Admin" asp-action="Index" >Admin Page</a>
+                </div>
+                <div class="col-12 ">
+                    <a class="btn btn-primary box-2" href="https://www.w3schools.com">Time Registration</a>
+                </div>
+            </div>
+       
+    </div>
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form method="post">
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" asp-for="@Model.FirstName" placeholder="First name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+</div>
